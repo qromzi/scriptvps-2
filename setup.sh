@@ -1,6 +1,8 @@
 #!/bin/bash
 if [ "${EUID}" -ne 0 ]; then
-		echo "You need to run this script as root"
+		echo "You need to run this s
+		
+		ipt as root"
 		exit 1
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
@@ -61,7 +63,7 @@ echo "Script Already Installed"
 exit 0
 fi
 mkdir /var/lib/cryptvpn;
-echo "IP=" >> /var/lib/crpytvpn/ipvps.conf
+echo "IP=" >> /var/lib/cryptvpn/ipvps.conf
 wget https://${cryptvpn}/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 wget https://${cryptvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
