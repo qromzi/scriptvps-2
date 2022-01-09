@@ -20,25 +20,25 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-cryptvpn="raw.githubusercontent.com/qromzi/scriptvps/main/ssh"
+cryptvpn="raw.githubusercontent.com/qromzi/scriptvps-2/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-cryptvpnn="raw.githubusercontent.com/qromzi/scriptvps/main/sstp"
+cryptvpnn="raw.githubusercontent.com/qromzi/scriptvps-2/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-cryptvpnnn="raw.githubusercontent.com/qromzi/scriptvps/main/ssr"
+cryptvpnnn="raw.githubusercontent.com/qromzi/scriptvps-2/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-cryptvpnnnn="raw.githubusercontent.com/qromzi/scriptvps/main/shadowsocks"
+cryptvpnnnn="raw.githubusercontent.com/qromzi/scriptvps-2/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-cryptvpnnnnn="raw.githubusercontent.com/qromzi/scriptvps/main/wireguard"
+cryptvpnnnnn="raw.githubusercontent.com/qromzi/scriptvps-2/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-cryptvpnnnnnn="raw.githubusercontent.com/qromzi/scriptvps/main/xray"
+cryptvpnnnnnn="raw.githubusercontent.com/qromzi/scriptvps-2/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-cryptvpnnnnnnn="raw.githubusercontent.com/qromzi/scriptvps/main/ipsec"
+cryptvpnnnnnnn="raw.githubusercontent.com/qromzi/scriptvps-2/main/ipsec"
 # Link Hosting Kalian Untuk Backup
-cryptvpnnnnnnnn="raw.githubusercontent.com/qromzi/scriptvps/main/backup"
+cryptvpnnnnnnnn="raw.githubusercontent.com/qromzi/scriptvps-2/main/backup"
 # Link Hosting Kalian Untuk Websocket
-cryptvpnnnnnnnnn="raw.githubusercontent.com/qromzi/scriptvps/main/websocket"
+cryptvpnnnnnnnnn="raw.githubusercontent.com/qromzi/scriptvps-2/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-cryptvpnnnnnnnnnn="raw.githubusercontent.com/qromzi/scriptvps/main/ohp"
+cryptvpnnnnnnnnnn="raw.githubusercontent.com/qromzi/scriptvps-2/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
@@ -62,7 +62,7 @@ exit 0
 fi
 mkdir /var/lib/cryptvpn;
 echo "IP=" >> /var/lib/crpytvpn/ipvps.conf
-wget https://${akbarvpn}/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://${cryptvpn}/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 wget https://${cryptvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://${cryptvpnn}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
